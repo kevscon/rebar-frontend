@@ -55,7 +55,7 @@ const App = () => {
         <div className="row mb-3 align-items-end">
           <SelectField label="Epoxy Coated?" value={propsInput.epoxy_coat} onChange={handleSelectChange(setPropsInput)} id="epoxy_coat" options={["yes", "no"]}/>
           <SelectField label="Top Bar?" value={propsInput.top_bar} onChange={handleSelectChange(setPropsInput)} id="top_bar" options={["yes", "no"]}/>
-          <InputField label="Lambda er" value={propsInput.lambda_er} onChange={handleInputChange(setPropsInput)} id="lambda_er" step="0.01"/>
+          <InputField label="&lambda;<sub>er</sub>" value={propsInput.lambda_er} onChange={handleInputChange(setPropsInput)} id="lambda_er" step="0.01"/>
         </div>
 
         {/* Outputs */}
@@ -63,7 +63,7 @@ const App = () => {
         <div className="row mb-3 align-items-end">
           <TextField label="Development Length" value={tension_development} readOnly id="tension_development" style={{ backgroundColor: '#f0f0f0' }}/>
           <TextField label="Hook Development Length" value={tension_hook_development} readOnly id="tension_hook_development" style={{ backgroundColor: '#f0f0f0' }}/>
-          <TextField label="Lap Splice Length)" value={tension_splice} readOnly id="tension_splice" style={{ backgroundColor: '#f0f0f0' }}/>
+          <TextField label="Lap Splice Length" value={tension_splice} readOnly id="tension_splice" style={{ backgroundColor: '#f0f0f0' }}/>
         </div>
 
 
